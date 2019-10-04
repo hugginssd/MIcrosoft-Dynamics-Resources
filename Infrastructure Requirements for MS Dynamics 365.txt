@@ -1,0 +1,37 @@
+Supported Server Operating Systems
+Operating System                                                         Notes
+ Microsoft Windows Server 2016 Datacenter or Standard			 These requirements are for the database and the Service Fabric 									 cluster that hosts AOS.
+									 Only en-US OS installations are supported.
+
+
+Software Requirements for Database Servers
+Requirement								 Notes
+ Microsoft SQL Server 2016 Standard Edition or Enterprise Edition	 
+ The Microsoft .NET Framework version 4.5.1 or later
+ Server Fabric
+
+Topology                Role(Node type)               Recommended Processor Cores    Recommended memory (GB)   Number Of Instances
+
+Sandbox                 AOS, Data Management, Batch    4                             24				2
+			Management Reporter            4			     16				1
+			SQL Server Reporting Services  4                             16				1
+			Orchestrator		       4			     16				3
+			SQL Server		       8                             32				1
+
+Network requirements
+ Network response time
+ The following table lists the minimum network requirements for the connection between the web browser and Application Object Server  (AOS), and for the connection between AOS and the database in an on-premises system.
+
+  Value			 Web browser to AOS	                         AOS to database
+
+  Bandwidth		 50 kilobytes per second (KBps) per user	 100 megabytes per second (MBps)
+  Latency                Less than 250–300 milliseconds (ms)		 Less than 1 ms (local area network [LAN] only). AOS and the 								         database must be co-located.
+
+
+
+
+
+
+
+
+
